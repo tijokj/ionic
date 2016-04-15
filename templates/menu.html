@@ -1,0 +1,41 @@
+<ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-dark">
+          <ion-nav-back-button class="no-text"></ion-nav-back-button>
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+            </ion-nav-buttons>
+         <!--
+          <ion-nav-buttons side="right">
+            <button class="button button-icon button-clear ion-android-more-vertical" id="menu-popover" ng-click="popover.show($event)"></button>
+          </ion-nav-buttons>
+          -->
+        </ion-nav-bar>
+        <ion-nav-view name="side-menu21"></ion-nav-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="left" id="side-menu21">
+        <ion-header-bar class="expanded">
+			<div style="text-align:center;">
+				<img src="img/logo.jpg" class="item-thumbnail avatar motion spin fade">
+			</div>
+			<div class="menu-right">
+                IIFAUtsavam
+            </div>
+        </ion-header-bar>
+        <!-- <ion-content padding="false" class="side-menu-left has-header my-menu">-->
+      <ion-content padding="false" class="stable-bg has-expanded-header my-menu">
+            <ion-list>
+                <ion-item ui-sref="menu.home" menu-close="">Home</ion-item>
+                <ion-item ui-sref="menu.iIFATheLegacy" menu-close="">IIFA : The Legacy</ion-item>
+                <ion-item ui-sref="menu.iIFAThroughTheYears" menu-close="">IIFA through the years</ion-item>
+                <ion-item ui-sref="menu.iIFAWeekend" menu-close="">IIFA Weekend</ion-item>
+                <ion-item ui-sref="menu.iIFAUtsavam2016" menu-close="">IIFA Utsavam</ion-item>
+                <ion-item ui-sref="menu.advisoryBoard" menu-close="">Advisory Board</ion-item>
+                <ion-item ui-sref="menu.itinerary" menu-close="">Itinerary</ion-item>
+				        <ion-item ui-sref="menu.gallery2016" menu-close="">Gallery</ion-item>
+              <ion-item ui-sref="menu.pplogo2016" menu-close="">Partners & Sponsers</ion-item>
+                <ion-item ui-sref="menu.contactUS" menu-close="">Contact us</ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

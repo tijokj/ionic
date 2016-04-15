@@ -1,0 +1,360 @@
+.iifa-background-img {
+  background: url('../img/iifautsavam_bg.jpg') no-repeat center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.my-menu {
+background-color: #000000;
+}
+.my-menu .scroll {
+  background-color: transparent;
+}
+.my-menu .list {
+  background-color: transparent;
+}
+.my-menu .item, .my-menu .item-content, .my-menu .item-complex{
+  background-color: transparent;
+  color: #FFFFFF;
+  border-top:1px thin #ffbf00;
+  border-color: #ffbf00;
+}
+.transparent {
+  background: transparent !important;
+}
+.image-modal {
+  width: 100% !important;
+  height: 100%;
+  top: 0 !important;
+  left: 0 !important;
+}
+.fullscreen-image {
+  max-width: 100%;
+  max-height: 100%;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+.slider {
+  width: 100%;
+  height: 100%;
+}
+p.info {
+  position: absolute;
+  bottom: 55px;
+  margin: 0 auto;
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 28px;
+  color: #ffffff;
+}
+@media (max-width: 679px) {
+  .active .modal-backdrop-bg {
+    opacity: .5;
+  }
+  .modal-backdrop-bg {
+    -webkit-transition: opacity 300ms ease-in-out;
+    transition: opacity 300ms ease-in-out;
+    background-color: #000;
+    opacity: 0;
+  }
+}
+.errormsgs p{color:#ff0000;padding-left:10px;}
+.sucessmsg{color: darkgreen; text-align: center; width: 100%; }
+.bg-white {
+  background-color: #FFFFFF;
+}
+
+h4 {
+    color: #116262;
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+h4:first-child {
+    border-top: none;
+    padding-top: initial;
+}
+
+/* Menu */
+
+.menu .bar.bar-header.expanded {
+    background-image: url('../img/material-graphite.jpg');
+    background-size: 120%;
+    background-position: 0%;
+    transition: all .5s ease-in-out;
+}
+
+.menu-open .ion-navicon {
+    transform: rotate(-360deg);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-open .ion-navicon:before {
+    content: "\f2ca";
+}
+
+/* Menu */
+
+.avatar, .item-avatar .avatar {
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  left: 16px;
+  position: absolute;
+}
+
+.menu-bottom {
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  position: absolute; }
+
+.menu-right {
+  top: 16px;
+  /* left: 16px; */
+  right: 16px;
+  position: absolute; }
+
+.menu-top {
+  top: 16px;
+  left: 16px;
+  right: 16px;
+  position: absolute; }
+
+.menu .avatar {
+  top: 16px;
+  left: 16px;
+  height: 80%;
+  /* width: 30%;  */
+}
+
+.menu .bar.bar-header.expanded {
+  box-shadow: none;
+  min-height: 150px;
+  color: #fff; }
+
+.menu-open .bar.bar-header.expanded {
+  background-position: 0;
+  background-size: 100%; }
+
+.has-expanded-header {
+  top: 150px !important; }
+
+.motion {
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+
+.fade {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-backface-visibility: hidden !important;
+  backface-visibility: hidden !important;
+  -webkit-transition: all 0.1s ease-out !important;
+  transition: all 0.1s ease-out !important; }
+
+.spin-back {
+  -webkit-backface-visibility: hidden !important;
+  backface-visibility: hidden !important;
+  -webkit-transform: translateZ(0) rotate(360deg) scale(0) !important;
+  transform: translateZ(0) rotate(360deg) scale(0) !important;
+  -webkit-transition: all 0.1s ease-out !important;
+  transition: all 0.1s ease-out !important; }
+
+.spiral {
+  -webkit-backface-visibility: hidden !important;
+  backface-visibility: hidden !important;
+  -webkit-transform: translateZ(0) rotate(-360deg) scale(0) translate(-120px) !important;
+  transform: translateZ(0) rotate(-360deg) scale(0) translate(-120px) !important;
+  -webkit-transition: all 0.1s ease-out !important;
+  transition: all 0.1s ease-out !important; }
+
+.spiral-back {
+  -webkit-backface-visibility: hidden !important;
+  backface-visibility: hidden !important;
+  -webkit-transform: translateZ(0) rotate(360deg) scale(0) translate(120px) !important;
+  transform: translateZ(0) rotate(360deg) scale(0) translate(120px) !important;
+  -webkit-transition: all 0.1s ease-out !important;
+  transition: all 0.1s ease-out !important; }
+
+.menu-open .avatar {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translateZ(0) rotate(0) scale(1) !important;
+  transform: translateZ(0) rotate(0) scale(1) !important;
+  -webkit-transition: all 0.3s ease-out !important;
+  transition: all 0.3s ease-out !important; }
+
+.spin {
+  -webkit-backface-visibility: hidden !important;
+  backface-visibility: hidden !important;
+  -webkit-transform: translateZ(0) rotate(0) scale(0) !important;
+  transform: translateZ(0) rotate(0) scale(0) !important;
+  -webkit-transition: all 0.3s ease-out !important;
+  transition: all 0.3s ease-out !important; }
+
+.spin.on {
+  -webkit-transform: translateZ(0) rotate(-360deg) scale(1) !important;
+  transform: translateZ(0) rotate(-360deg) scale(1) !important; }
+
+.flap {
+  -webkit-backface-visibility: hidden !important;
+  backface-visibility: hidden !important;
+  -webkit-transform: translateZ(0) rotateX(0) scale(0) translate(-120px) !important;
+  transform: translateZ(0) rotateX(0) scale(0) translate(-120px) !important;
+  -webkit-transition: all 0.5s ease-out !important;
+  transition: all 0.5s ease-out !important; }
+
+.flap.on {
+  -webkit-transform: translateZ(0) rotateX(-720deg) scale(1) translate(0) !important;
+  transform: translateZ(0) rotateX(-720deg) scale(1) translate(0) !important;
+  -webkit-transition: all 0.5s ease-out !important;
+  transition: all 0.5s ease-out !important; }
+
+.drop {
+  -webkit-backface-visibility: hidden !important;
+  backface-visibility: hidden !important;
+  -webkit-transform: translateZ(0) scale(3) !important;
+  transform: translateZ(0) scale(3) !important;
+  -webkit-transition: all 0.5s ease-out !important;
+  transition: all 0.5s ease-out !important; }
+
+.drop.on {
+  -webkit-transform: translateZ(0) scale(1) !important;
+  transform: translateZ(0) scale(1) !important;
+  -webkit-transition: all 0.5s ease-out !important;
+  transition: all 0.5s ease-out !important; }
+
+.flip {
+  -webkit-backface-visibility: hidden !important;
+  backface-visibility: hidden !important;
+  -webkit-transform: translateZ(0) rotateY(0) scale(0) !important;
+  transform: translateZ(0) rotateY(0) scale(0) !important;
+  -webkit-transition: all 0.5s ease-out !important;
+  transition: all 0.5s ease-out !important; }
+
+.flip.on {
+  -webkit-transform: translateZ(0) rotateY(-720deg) scale(1) !important;
+  transform: translateZ(0) rotateY(-720deg) scale(1) !important;
+  -webkit-transition: all 0.5s ease-out !important;
+  transition: all 0.5s ease-out !important; }
+
+
+
+
+
+/* Empty. Add your own CSS if you like */
+/* Utilities */
+
+.title-bordered {
+    border-top: solid 2px #ffbf00;
+    padding-top: 30px;
+}
+
+p {
+    color: #555;
+    margin: 0 0 25px;
+}
+
+.no-border {
+    border: none;
+}
+
+.static {
+    position: static;
+}
+
+.border-top {
+    border-top: solid 1px #ccc;
+    padding-top: 30px;
+}
+
+.blue-grey-900 {
+    background-color: #263238 !important;
+    color: #fff;
+}
+/* Menu */
+
+.menu .bar.bar-header.expanded {
+    background-image: url('../img/material-graphite.jpg');
+    background-size: 120%;
+    background-position: 0%;
+    transition: all .5s ease-in-out;
+}
+
+.menu.menu-left * {
+
+}
+
+.item-radio input:checked ~ .item-content {
+    background: transparent;
+}
+
+.menu-open .ion-navicon {
+    transform: rotate(-360deg);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-open .ion-navicon:before {
+    content: "\f2ca";
+}
+
+.item.item-radio .radio-icon {
+    opacity: 1;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.item.item-radio:active .radio-icon {
+    opacity: 0;
+    transform: scale(1.6);
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+.directions.button-bar {
+    margin: 0 auto;
+    width: 33.333%;
+}
+
+.directions.button-bar button {
+    line-height: 26px;
+}
+
+.ion-arrow-right-c.top-left:before {
+    transform: rotate(-135deg);
+}
+
+.ion-arrow-right-c.top-right:before {
+    transform: rotate(-45deg);
+}
+
+.ion-arrow-right-c.bottom-left:before {
+    transform: rotate(-225deg);
+}
+
+.ion-arrow-right-c.bottom-right:before {
+    transform: rotate(45deg);
+}
+
+.item-gradiant-header{
+  background-image: -moz-linear-gradient(90deg, #FFC926 0%, #FFFF99 100%);
+  background-image: -webkit-linear-gradient(90deg, #FFC926 0%, #FFFF99 100%);
+  background-image: -ms-linear-gradient(90deg, #FFC926 0%, #FFFF99 100%);
+}
+
+.item-gradiant-text{
+  font-weight: 600;
+  font-family: 'Titillium Web', Helvetica, Arial, sans-serif;
+  color: #FFC926;
+  background: -webkit-linear-gradient(90deg, #D9A300 0%, #FFFF99 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

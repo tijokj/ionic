@@ -1,0 +1,75 @@
+<ion-view title="Contact US" id="page11" style="background-color:#FFFFFF;" cache-view="false" view-title="Contact us">
+  <ion-content overflow-scroll="true" padding="true"
+               scroll="false" class="has-header iifa-background-img">
+    <form name="myForm" class="list padding bg-white" novalidate>
+
+      <div class="padding sucessmsg" ng-if="isLoading">
+          {{sucessmsg}}
+      </div>
+
+<!--
+      <div class="padding">
+        <button class="button" ng-click="showToast('this is a test', 'long', 'center')">Long Center</button>
+      </div>
+-->
+      <label class="item item-input padding-right">
+        <span class="input-label">Name</span>
+        <input type="text" placeholder="Enter your Name" name="username" ng-model="username" required>
+      </label>
+
+      <div class="errormsgs">
+        <p ng-show="myForm.username.$error.required">* Name : required</p>
+      </div>
+
+      <label class="item item-input">
+        <span class="input-label">Email</span>
+        <input type="email" placeholder="Enter your Email ID"  name="emailid" ng-model="emailid" required>
+      </label>
+      <div class="errormsgs">
+        <p ng-show="myForm.emailid.$error.required">* Email : required</p>
+        <p ng-show="myForm.emailid.$invalid && !myForm.emailid.$pristine">* Email : Please enter valid email id</p>
+      </div>
+
+      <label class="item item-input">
+        <span class="input-label">Phone</span>
+        <input type="tel" placeholder="Enter your Phone Number"  name="phoneno" ng-model="phoneno" ng-minlength="10" required>
+      </label>
+      <div class="errormsgs">
+        <p ng-show="myForm.phoneno.$error.required">* Phone : required</p>
+        <p ng-show="myForm.phoneno.$error.minlength">* Phone : Need 10 Numbers</p>
+      </div>
+
+      <label class="item item-input">
+        <span class="input-label">Subject</span>
+        <input type="text" placeholder="Subject"  name="subject" ng-model="subject" required>
+      </label>
+      <div class="errormsgs">
+        <p ng-show="myForm.subject.$error.required">* Subject : required</p>
+      </div>
+
+      <label class="item item-input">
+        <span class="input-label">Message</span>
+
+              <textarea type="text" placeholder="Type your messages"
+                        name="txtMessages"
+                        ng-model="txtMessages"
+                        ng-required="true"></textarea>
+      </label>
+      <div class="errormsgs">
+        <p ng-show="myForm.txtMessages.$error.required">* Message : required</p>
+      </div>
+
+      <div>
+        <button type="button"
+                ng-click="submit(this)"
+                class="button button-energized  button-block icon-left ion-ios-email-outline"
+                ng-disabled="myForm.$invalid || disableButton">Submit</button>
+      </div>
+
+
+    </form>
+    <!--
+     <a href="mailto:event@wizcraftworld.com" id="contactUS-button1" style="color:#FFFFFF;border-radius:2px 2px 2px 2px;" class="button button-energized  button-block icon-left ion-ios-email-outline">Submit</a>
+     -->
+  </ion-content>
+</ion-view>

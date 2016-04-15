@@ -1,0 +1,51 @@
+<ion-view title="IIFAUtsavam" id="page1" style="background-color:#000000;">
+ <ion-content overflow-scroll="false" padding="true" class="has-header">
+
+  <div class="im-wrapper">
+		 <ion-slide-box
+          auto-play="true"
+          slide-interval ="4000"
+          does-continue="true"
+          show-pager="false"
+          >
+            <ion-slide ng-repeat="s in [1,2,3,4,5,6,7]">
+              <div class="box responsive-md">
+                <img ng-src="img/slider/banner{{s}}.jpg" width="100%" height="auto">
+              </div>
+            </ion-slide>
+          </ion-slide-box>
+  </div>
+
+<!--
+     <div class="list card">
+       <div class="item item-text-wrap">
+         <h4>Network: {{network}}</h4>
+       </div>
+     </div>
+
+     <div class="list card">
+       <div class="item item-text-wrap">
+         <ion-toggle ng-model="isOnline" ng-checked="item.checked">
+           <h2 ng-show="isOnline">I'm online</h2>
+           <h2 ng-show="! isOnline">I'm offline</h2>
+         </ion-toggle>
+       </div>
+     </div>
+-->
+		<!--
+		    <div class="list card">
+            <div class="item item-divider">News</div>
+            <div class="item item-body"></div>
+        </div>
+        <div class="list card">
+            <div class="item item-divider">Facebook</div>
+            <div class="item item-body"></div>
+        </div>
+        <div class="list card">
+            <div class="item item-divider">Twitter</div>
+            <div class="item item-body"></div>
+            <div class="item item-divider">2016</div>
+        </div>
+		-->
+    </ion-content>
+</ion-view>

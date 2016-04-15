@@ -1,0 +1,32 @@
+
+<ion-view title="Partners & Sponsors" id="pplogo2016"
+          style="background-color:#FFFFFF;" cache-view="true"
+          view-title="Partners & Sponsors">
+  <ion-content overflow-scroll="true" padding="true"
+               scroll="true" class="has-header iifa-background-img">
+    <!--
+        <div class="list">
+        <div class="item row responsive-md"
+		ng-repeat="image in partnersDetails" style="text-align:center;" >
+
+		<h2>{{image.TITLE}}</h2>
+
+		<div class="inline" ng-repeat="imgid in image.IMGIDS">
+          <img ng-src="img/partners/{{imgid}}.jpg" class="item-thumbnail">
+        </div>
+        </div>
+        </div>
+-->
+
+    <div class="list card" ng-repeat="image in partnersDetails">
+      <div class="item item-divider item-gradiant-header"><h2>{{image.TITLE}}</h2></div>
+      <div class="item item-body">
+        <div class="inline" ng-repeat="imgid in image.IMGIDS">
+          <img ng-src="img/partners/{{imgid}}.jpg" width="70%" class="item-thumbnail">
+        </div>
+      </div>
+    </div>
+
+	</ion-content>
+
+</ion-view>

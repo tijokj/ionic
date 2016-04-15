@@ -1,0 +1,67 @@
+<ion-view title="Gallery" id="gallery2016" style="background-color:#FFFFFF;"
+          cache-view="false" view-title="Gallery"
+  >
+  <!--
+  <ion-content overflow-scroll="true" padding="true" class="has-header iifa-background-img"
+               ng-controller="GalleryCtrl" ng-init="loadImages()">
+    -->
+
+  <ion-content overflow-scroll="true" padding="true" class="has-header iifa-background-img">
+    <!--
+      <div class="row responsive-md">
+        <div class="col col-25" ng-repeat="image in images">
+          <img ng-src="{{image.src}}" width="100%" />
+        </div>
+      </div>
+   -->
+
+    <div class="row responsive-md" ng-repeat="image in images" ng-if="$index % 4 === 0">
+      <div class="col col-25" ng-if="$index < images.length">
+        <img ng-src="{{images[$index].src}}" width="100%" ng-click="goToSlide($index)" />
+      </div>
+      <div class="col col-25" ng-if="$index + 1 < images.length" ng-click="goToSlide($index + 1)">
+        <img ng-src="{{images[$index + 1].src}}" width="100%" />
+      </div>
+      <div class="col col-25" ng-if="$index + 2 < images.length" ng-click="goToSlide($index + 2)">
+        <img ng-src="{{images[$index + 2].src}}" width="100%" />
+      </div>
+      <div class="col col-25" ng-if="$index + 3 < images.length" ng-click="goToSlide($index + 3)">
+        <img ng-src="{{images[$index + 3].src}}" width="100%" />
+      </div>
+    </div>
+
+
+    <script id="Gallery" type="text/ng-template">
+      <div class="modal image-modal transparent"
+           ng-click="closeModal()">
+        <ion-slide-box on-slide-changed="slideChanged(index)"
+                       show-pager="false">
+          <ion-slide ng-repeat="oImage in images">
+            <img ng-src="{{oImage.src2}}" class="fullscreen-image" />
+            <p class="info">{{oImage.msg}}</p>
+          </ion-slide>
+        </ion-slide-box>
+      </div>
+    </script>
+
+
+  </ion-content>
+</ion-view>
+
+<!--
+bower install --save ion-gallery
+<link href="lib/ion-gallery/dist/ion-gallery.css" rel="stylesheet">
+<script src="lib/ion-gallery/dist/ion-gallery.min.js"></script>
+<ion-gallery ion-gallery-items="items" ion-gallery-row="5"></ion-gallery>
+angular
+.module('starter', ['ionic','ion-gallery'])
+
+app.config(function(ionGalleryConfigProvider) {
+ionGalleryConfigProvider.setGalleryConfig({
+action_label: 'Close',
+toggle: false,
+row_size: 3,
+fixed_row_size: true
+});
+});
+-->
